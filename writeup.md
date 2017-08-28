@@ -59,7 +59,7 @@ I also found that enabling the `transform_sqrt` to apply power law compression t
 
 ####3. Describe how (and identify where in your code) you trained a classifier using your selected HOG features (and color features if you used them).
 
-I trained a linear SVM using StandardScaler to normalize the images.. I trained it on all samples of car/ not car images. The linear SVC was sufficiently good at classifying the batch of test data that was split from the input samples of car/ not car images. I verfied this by calculating the accuracy.
+I trained a linear SVM using StandardScaler to normalize the images. I use 80% for training and 20% for validation. The linear SVC was sufficiently good at classifying the batch of test data that was split from the input samples of car/ not car images. I verfied this by calculating the accuracy.
 
 Using: 9 orientations 12 pixels per cell and 2 cells per block
 Feature vector length: 4896
